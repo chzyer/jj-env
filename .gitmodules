@@ -1,0 +1,3 @@
+[submodule "go"]
+	path = go/src/github.com/jj-io/jj
+	url = git@github.com:jj-io/jj.git
