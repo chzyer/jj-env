@@ -1,3 +1,6 @@
 [submodule "go"]
 	path = go/src/github.com/jj-io/jj
 	url = git@github.com:jj-io/jj.git
+[submodule "android"]
+	path = android
+	url = git@github.com:jj-io/jj-android.git
