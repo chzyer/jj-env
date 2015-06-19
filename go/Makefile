@@ -1,10 +1,10 @@
 GOPATH := $(shell pwd):$(shell pwd)/deps
 GOBIN := $(shell pwd)/bin
 PATH := $(PATH):${GOBIN}:$(shell pwd)/deps/bin
-.PHONY: deps src/github.com/jj-io/jj/jj
+.PHONY: deps src/github.com/jj-io/jj
 
-build: deps src/github.com/jj-io/jj/jj
-	go install github.com/jj-io/jj/jj
+build: deps src/github.com/jj-io/jj
+	go install github.com/jj-io/jj
 
 deps:
 	@make -C deps
@@ -22,7 +22,7 @@ test:
 gen:
 	go generate ./...
 
-src/github.com/jj-io/jj/jj:
+src/github.com/jj-io/jj:
 	@git submodule init src/github.com/jj-io/jj
 	@git submodule sync src/github.com/jj-io/jj
 	@git submodule update src/github.com/jj-io/jj
