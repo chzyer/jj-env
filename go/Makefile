@@ -14,7 +14,7 @@ clean:
 	go clean
 
 restart:
-	supervisorctl restart go
+	supervisorctl restart jj
 
 test:
 	go test ./...
