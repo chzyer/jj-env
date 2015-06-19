@@ -1,6 +1,6 @@
-GOPATH := $(shell pwd):$(shell pwd)/deps
-GOBIN := $(shell pwd)/bin
-PATH := $(PATH):${GOBIN}:$(shell pwd)/deps/bin
+export GOPATH := $(shell pwd):$(shell pwd)/deps
+export GOBIN := $(shell pwd)/bin
+export PATH := $(PATH):${GOBIN}:$(shell pwd)/deps/bin
 .PHONY: deps src/github.com/jj-io/jj
 
 build: deps src/github.com/jj-io/jj

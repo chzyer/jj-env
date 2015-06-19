@@ -1,7 +1,7 @@
-GOPATH := $(shell pwd)
-GOBIN := $(shell pwd)/bin
-pkg := $(shell cat pkg.list)
-pkgsrc := $(shell cat pkg.list | xargs -I{} echo src/{})
+export GOPATH := $(shell pwd)
+export GOBIN := $(shell pwd)/bin
+export pkg := $(shell cat pkg.list)
+export pkgsrc := $(shell cat pkg.list | xargs -I{} echo src/{})
 
 all: $(pkgsrc)
 	@go install $(pkg)
