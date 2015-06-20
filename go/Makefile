@@ -1,9 +1,9 @@
 export GOPATH := $(shell pwd):$(shell pwd)/deps
 export GOBIN := $(shell pwd)/bin
 export PATH := $(PATH):${GOBIN}:$(shell pwd)/deps/bin
-.PHONY: deps src/github.com/jj-io/jj
+.PHONY: deps
 
-build: deps src/github.com/jj-io/jj
+build: deps
 	go install github.com/jj-io/jj
 
 deps:
@@ -22,7 +22,3 @@ test:
 gen:
 	go generate ./...
 
-src/github.com/jj-io/jj:
-	@git submodule init src/github.com/jj-io/jj
-	@git submodule sync src/github.com/jj-io/jj
-	@git submodule update src/github.com/jj-io/jj
