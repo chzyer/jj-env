@@ -23,5 +23,5 @@ gen:
 	go generate ./...
 
 deploy:
-	cd src/github.com/jj-io/jj/ && gc -a && gp
+	bash -c "cd src/github.com/jj-io/jj/ && gc -a && gp"
 	gc -a && gp
