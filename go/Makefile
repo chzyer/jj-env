@@ -22,3 +22,6 @@ test:
 gen:
 	go generate ./...
 
+deploy:
+	cd src/github.com/jj-io/jj/ && gc -a && gp
+	gc -a && gp
