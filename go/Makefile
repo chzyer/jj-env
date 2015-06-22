@@ -6,6 +6,9 @@ export PATH := $(PATH):${GOBIN}:$(shell pwd)/deps/bin
 build: deps
 	go install github.com/jj-io/jj
 
+cmd: deps
+	go install github.com/jj-io/jj/cmd/...
+
 deps:
 	@make -C deps
 
