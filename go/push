@@ -1,0 +1,4 @@
+#!/bin/bash
+cd src/github.com/jj-io/jj/
+git commit -v -a
+git push

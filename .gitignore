@@ -3,3 +3,4 @@ go/pkg/
 go/deps/src
 go/deps/pkg
 go/version/
+go/mongo/
