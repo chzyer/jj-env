@@ -4,3 +4,4 @@ gopkg.in/mgo.v2
 gopkg.in/vmihailenco/msgpack.v2
 github.com/satori/go.uuid
 github.com/bobappleyard/readline
+golang.org/x/crypto/ssh/terminal
