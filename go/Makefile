@@ -4,10 +4,10 @@ export PATH := $(PATH):${GOBIN}:$(shell pwd)/deps/bin
 .PHONY: deps
 
 build: deps
-	go install github.com/jj-io/jj
+	@go install github.com/jj-io/jj
 
 cmd: deps
-	go install github.com/jj-io/jj/cmd/...
+	@go install github.com/jj-io/jj/cmd/...
 
 deps:
 	@make -C deps
@@ -24,7 +24,3 @@ test:
 
 gen:
 	go generate ./...
-
-deploy:
-	bash -c "cd src/github.com/jj-io/jj/ && gc -a && gp"
-	gc -a && gp

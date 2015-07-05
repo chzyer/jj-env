@@ -2,7 +2,7 @@ go/bin/
 go/pkg/
 go/deps/src
 go/deps/pkg
-go/version/
+go/deps/vers
 go/mongo/
 test/
 ios/
