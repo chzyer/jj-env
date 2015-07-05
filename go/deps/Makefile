@@ -18,5 +18,5 @@ clean:
 vers/%:
 	go get -u -v $(shell bash -c "dirname `echo "$@"|sed 's/vers\///'`")
 	@mkdir -p $(shell dirname $@)
-	@rm $(shell dirname $@)/*
+	@rm -f $(shell dirname $@)/*
 	@touch $@
