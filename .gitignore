@@ -4,3 +4,5 @@ go/deps/src
 go/deps/pkg
 go/version/
 go/mongo/
+test/
+ios/
